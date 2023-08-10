@@ -1,10 +1,11 @@
 .container {
     text-align: center;
-    margin-top: 300px;
+    margin-top: 400px;
 }
 
 
 body {
+    /* below line of code is from https://dev.to/nazanin_ashrafi/how-to-darken-an-image-with-css-4f5h */
     background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('https://cutewallpaper.org/28/cool-polish-flag-wallpaper-dh/download-wallpapers-flag-of-poland-polish-flag-poland-europe-silk-besthqwallpaperscom-bandera-de-polonia-bandera-polaca-banderas.png');
     background-size: cover; 
     background-position: center;
