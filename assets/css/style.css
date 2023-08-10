@@ -1,3 +1,27 @@
-h1 {
-    justify-content: center;
+.container {
+    text-align: center;
+    margin-top: 300px;
 }
+
+
+body {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('https://cutewallpaper.org/28/cool-polish-flag-wallpaper-dh/download-wallpapers-flag-of-poland-polish-flag-poland-europe-silk-besthqwallpaperscom-bandera-de-polonia-bandera-polaca-banderas.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+
+h1 {
+    text-transform: capitalize;
+    color: whitesmoke;
+   
+}
+
+.button {
+  text-transform: capitalize;
+
+}
+
