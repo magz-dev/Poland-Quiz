@@ -1,16 +1,25 @@
-function runGame() {
+let startButton = document.getElementById('start-btn')
+
+startButton.addEventListener('click', startQuiz)
+
+function startQuiz() {
+    startButton.classList.add('hide')
+    questionContainerElement.classList.remove('hide')
+    setNextQuestion()
 
 }
 
 
-function checkAnswer(){
+function setNextQuestion() {
 
 }
 
 
-function IncrementScore() {
+function selectAnswer(){
 
 }
+
+
 
 
 function displayQuestion() {
