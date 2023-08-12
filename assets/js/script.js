@@ -1,11 +1,5 @@
-let startButton = document.getElementById('start-btn')
 
-startButton.addEventListener('click', startQuiz)
-
-function startQuiz() {
-    startButton.classList.add('hide')
-    questionContainerElement.classList.remove('hide')
-    setNextQuestion()
+function runGame() {
 
 }
 
@@ -15,15 +9,28 @@ function setNextQuestion() {
 }
 
 
-function selectAnswer(){
-
-}
-
-
-
 
 function displayQuestion() {
 
 }
 
+
+function checkAnswer(){
+
+}
+
+
+
+
+const questions = [
+    {
+        question: 'What is a capital city of Poland?',
+        answers: [
+            {text: 'Warszawa', correct: true},
+            {text: 'Krakow', correct: false},
+
+        ]
+    }
+
+]
 
