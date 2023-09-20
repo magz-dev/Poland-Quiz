@@ -1,11 +1,53 @@
 
 const questions = [
     {
-        question: 'What is a capital city of Poland?',
+        question: "What is the capital city of Poland?",
         answers: [
+            {text:'Warsaw', correct:true},
+            {text:'Budapest', correct:false},        
+            {text:'Prague', correct:false},
+            {text:'Riga', correct:false},
 
         ]
-    }
+    },
+    { 
+        question: "What is the Polish currency unit?",
+        answers: [
+            {text:'Zloty', correct:true},
+            {text:'Krona', correct:false},        
+            {text:'Koruna', correct:false},
+            {text:'Euro', correct:false},
+        ]
+    },
+    { 
+        question: "Who is a president of Poland?",
+        answers: [
+            {text:'Viktor Orban', correct:false},        
+            {text:'Petr Pavel', correct:false},
+            {text:'Andrzej Duda', correct:true},
+            {text:'Zoran Milanovic', correct:false},
+        ]
+    },
+    { 
+        question: "Which chemical element is named after Poland?",
+        answers: [
+            {text:'Palladium', correct:false},        
+            {text:'Radium', correct:false},
+            {text:'Radon', correct:false},
+            {text:'Polonium', correct:true},
+
+        ]
+    },
+    { 
+        question: "What's the name of Poland's principal seaport?",
+        answers: [
+            {text:'Gdynia', correct:false},        
+            {text:'Krakow', correct:false},
+            {text:'Gdansk', correct:true},
+            {text:'Sopot', correct:false},
+
+        ]
+    },
 
 ]
 
@@ -31,18 +73,25 @@ function displayQuestion() {
         button.textContent = answer.text;
         button.addEventListener("click", checkAnswer);
         optionsElement.appendChild(button);
-    })}
-    }
+        })
+     } else {
+        endGame();
+
+    }}
+    
 
 
-    function setNextQuestion() {
+function setNextQuestion(){
      
     }
+
 
 function checkAnswer(){
 
 }
 
 
+function endGame() {
 
+}
 
