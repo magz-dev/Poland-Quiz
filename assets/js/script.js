@@ -1,7 +1,7 @@
 
 const questions = [
     {
-        question: "What is the capital city of Poland?",
+        question: "What is the capital of Poland?",
         answers: [
             {text:'Warsaw', correct:true},
             {text:'Budapest', correct:false},        
@@ -45,6 +45,26 @@ const questions = [
             {text:'Krakow', correct:false},
             {text:'Gdansk', correct:true},
             {text:'Sopot', correct:false},
+
+        ]
+    },
+    { 
+        question: "Which astronomer first formulated a model of the universe that placed the Sun at its center?",
+        answers: [
+            {text:'Joseph Konrad', correct:false}, 
+            {text:'Nicolaus Copernicus', correct:true},       
+            {text:'Lech Walesa', correct:false},
+            {text:'Frederic Chopin', correct:false},
+
+        ]
+    },
+    { 
+        question: "What is the national animal of Poland?",
+        answers: [
+            {text:'Otter', correct:false}, 
+            {text:'European Bison', correct:true},       
+            {text:'Red Deer', correct:false},
+            {text:'Lynx', correct:false},
 
         ]
     },
