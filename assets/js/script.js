@@ -92,7 +92,7 @@ function displayQuestion() {
         const button = document.createElement("button");
         button.textContent = answer.text;
         button.addEventListener("click", checkAnswer);
-        optionsElement.appendChild(button);
+        answerButtons.appendChild(button);
         })
      } else {
         endGame();
@@ -101,10 +101,15 @@ function displayQuestion() {
     
 
 
-function setNextQuestion(){
-     
+function setNextQuestion() {
+     nextButton.style.display ="none";
+     while(answerButtons.firstChild){
+        answerButtons.removeChild(answerButtons.firstChild);
+     }
     }
 
+
+ runGame();
 
 function checkAnswer(){
 
