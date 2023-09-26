@@ -108,7 +108,7 @@ function setNextQuestion() {
      }
     }
 
-    function checkAnswer(answer){
+function checkAnswer(answer){
         if (answer.correct) {
 
         } else {
@@ -126,8 +126,6 @@ if ( currentQuestionIndex < questions.length) {
 
 }
     
-    
-
  runGame();
 
 
