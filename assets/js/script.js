@@ -85,38 +85,51 @@ displayQuestion();
 
 function displayQuestion() {
     setNextQuestion();
-    if (currentQuestionIndex < questions.length) {
-        questionText.textContent = questions[currentQuestionIndex].question;
-        answerButtons.innerHTML = "";
-        questions[currentQuestionIndex].answers.forEach((answer)=> {
+
+    const currentQuestion = questions[currentQuestionIndex];
+    questionText.textContent = currentQuestion.question;
+
+    currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.textContent = answer.text;
-        button.addEventListener("click", checkAnswer);
+        button.classList.add("answer");
+        button.addEventListener("click", () => checkAnswer(answer));
         answerButtons.appendChild(button);
-        })
-     } else {
-        endGame();
-
-    }}
+        });
+}
     
 
 
 function setNextQuestion() {
+
      nextButton.style.display ="none";
      while(answerButtons.firstChild){
         answerButtons.removeChild(answerButtons.firstChild);
      }
     }
 
+    function checkAnswer(answer){
+        if (answer.correct) {
+
+        } else {
+
+        }
+
+currentQuestionIndex++
+
+if ( currentQuestionIndex < questions.length) {
+    displayQuestion();
+} else {
+    nextButton.style.display = "none";
+    questionText.textContent = "Quiz finished!";
+}
+
+}
+    
+    
 
  runGame();
 
-function checkAnswer(){
-
-}
 
 
-function endGame() {
-
-}
 
