@@ -86,11 +86,11 @@ displayQuestion();
 function displayQuestion() {
     setNextQuestion();
 
-    const currentQuestion = questions[currentQuestionIndex];
+    let currentQuestion = questions[currentQuestionIndex];
     questionText.textContent = currentQuestion.question;
 
     currentQuestion.answers.forEach(answer => {
-        const button = document.createElement("button");
+        let button = document.createElement("button");
         button.textContent = answer.text;
         button.classList.add("answer");
         button.addEventListener("click", () => checkAnswer(answer));
@@ -109,22 +109,27 @@ function setNextQuestion() {
     }
 
 function checkAnswer(answer){
+        
         if (answer.correct) {
-
+           window.alert('Correct!');
         } else {
-
+           window.alert("Incorrect.The correct answer is: " + questions[currentQuestionIndex].answers.find(isCorrect));
+        }
         }
 
-currentQuestionIndex++
+    currentQuestionIndex++
 
-if ( currentQuestionIndex < questions.length) {
-    displayQuestion();
-} else {
-    nextButton.style.display = "none";
-    questionText.textContent = "Quiz finished!";
-}
+    if ( currentQuestionIndex < questions.length) {
+        displayQuestion();
+    } else {
+        nextButton.style.display = "none";
+        questionText.textContent = "Quiz finished!";
+    }
 
-}
+    function isCorrect(a) {
+        return a.correct;
+      }
+      
     
  runGame();
 

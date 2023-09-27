@@ -36,11 +36,19 @@ box-shadow: 0 0 10px 2px;
   text-align: center;
 }
 
-.submit-btn, .next-btn {
-  margin: 10px;
+ .next-btn {
+  margin: 20px;
 }
 
 .btn {
   color: black;
   font-weight: bold;
+}
+
+.correct{
+  background: green;
+}
+
+.incorrect{
+   background: red;
 }
