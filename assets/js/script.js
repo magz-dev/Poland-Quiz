@@ -1,3 +1,4 @@
+// questions and answers for the quiz
 
 const questions = [
     {
@@ -72,16 +73,19 @@ const questions = [
 ]
 
 let currentQuestionIndex = 0;
+let score = 0;
 const questionText = document.getElementById("question");
 const answerButtons = document.getElementById("answers");
 const nextButton = document.getElementById("next-btn");
 
 function runGame() {
 currentQuestionIndex = 0;
+score = 0;
 nextButton.innerHTML = "Next";
 displayQuestion();
 }
 
+// function that displays questions and answers
 
 function displayQuestion() {
     setNextQuestion();
@@ -97,8 +101,8 @@ function displayQuestion() {
         answerButtons.appendChild(button);
         });
 }
-    
 
+// function that sets next question and answers
 
 function setNextQuestion() {
 
@@ -107,28 +111,31 @@ function setNextQuestion() {
         answerButtons.removeChild(answerButtons.firstChild);
      }
     }
+ 
+ // function that checks answer
 
 function checkAnswer(answer){
         
     if (answer.correct) {
         alert('Correct!');
+        score++; // increment the score
     } else {
         const correctAnswer = questions[currentQuestionIndex].answers.find(function (ans) {
             return ans.correct;
         });
         alert("Incorrect. The correct answer is: " + correctAnswer.text);
     }
-}    
-
-    currentQuestionIndex++
+  
+    currentQuestionIndex++; // move to the next question
 
     if ( currentQuestionIndex < questions.length) {
         displayQuestion();
     } else {
+        questionText.innerHTML = `You scored ${score} out of ${questions.length}!`;
         nextButton.style.display = "none";
-        questionText.textContent = "Quiz finished!";
+        answerButtons.style.display = "none";
     }
-
+}
     
  runGame();
 
