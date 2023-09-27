@@ -1,5 +1,4 @@
 // questions and answers for the quiz
-
 const questions = [
     {
         question: "What is the capital of Poland?",
@@ -78,15 +77,15 @@ const questionText = document.getElementById("question");
 const answerButtons = document.getElementById("answers");
 const nextButton = document.getElementById("next-btn");
 
+// function that initializes the quiz
 function runGame() {
 currentQuestionIndex = 0;
 score = 0;
-nextButton.innerHTML = "Next";
+nextButton.textContent = "Next";
 displayQuestion();
 }
 
 // function that displays questions and answers
-
 function displayQuestion() {
     setNextQuestion();
 
@@ -102,8 +101,7 @@ function displayQuestion() {
         });
 }
 
-// function that sets next question and answers
-
+// function that sets the next question and answers
 function setNextQuestion() {
 
      nextButton.style.display ="none";
@@ -112,8 +110,7 @@ function setNextQuestion() {
      }
     }
  
- // function that checks answer
-
+ // function that checks the selected answer
 function checkAnswer(answer){
         
     if (answer.correct) {
@@ -131,7 +128,7 @@ function checkAnswer(answer){
     if ( currentQuestionIndex < questions.length) {
         displayQuestion();
     } else {
-        questionText.innerHTML = `You scored ${score} out of ${questions.length}!`;
+        questionText.textContent = `You scored ${score} out of ${questions.length}!`;
         nextButton.style.display = "none";
         answerButtons.style.display = "none";
     }
