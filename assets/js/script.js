@@ -93,7 +93,7 @@ function displayQuestion() {
         let button = document.createElement("button");
         button.textContent = answer.text;
         button.classList.add("answer");
-        button.addEventListener("click", () => checkAnswer(answer));
+        button.addEventListener("click", checkAnswer);
         answerButtons.appendChild(button);
         });
 }
@@ -110,12 +110,15 @@ function setNextQuestion() {
 
 function checkAnswer(answer){
         
-        if (answer.correct) {
-           window.alert('Correct!');
-        } else {
-           window.alert("Incorrect.The correct answer is: " + questions[currentQuestionIndex].answers.find(isCorrect));
-        }
-        }
+    if (answer.correct) {
+        alert('Correct!');
+    } else {
+        const correctAnswer = questions[currentQuestionIndex].answers.find(function (ans) {
+            return ans.correct;
+        });
+        alert("Incorrect. The correct answer is: " + correctAnswer.text);
+    }
+}    
 
     currentQuestionIndex++
 
@@ -126,10 +129,6 @@ function checkAnswer(answer){
         questionText.textContent = "Quiz finished!";
     }
 
-    function isCorrect(a) {
-        return a.correct;
-      }
-      
     
  runGame();
 
