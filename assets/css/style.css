@@ -44,11 +44,3 @@ box-shadow: 0 0 10px 2px;
   color: black;
   font-weight: bold;
 }
-
-.correct{
-  background: green;
-}
-
-.incorrect{
-   background: red;
-}
