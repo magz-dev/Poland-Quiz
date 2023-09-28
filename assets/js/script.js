@@ -1,55 +1,48 @@
 // questions and answers for the quiz
 const questions = [
-    {
-        question: "What is the capital of Poland?",
+    { question: "What is the capital of Poland?",
         answers: [
             {text:"Warsaw", correct:true},
             {text:"Budapest", correct:false},        
             {text:"Prague", correct:false},
             {text:"Riga", correct:false}]
     },
-    { 
-        question: "What is the Polish currency unit?",
+    { question: "What is the currency unit of Poland?",
         answers: [
             {text:"Zloty", correct:true},
             {text:"Krone", correct:false},        
             {text:"Koruna", correct:false},
             {text:"Euro", correct:false}]
     },
-    { 
-        question: "Who is the president of Poland?",
+    { question: "Who is the president of Poland?",
         answers: [
             {text:"Viktor Orban", correct:false},        
             {text:"Petr Pavel", correct:false},
             {text:"Andrzej Duda", correct:true},
             {text:"Zoran Milanovic", correct:false}]
     },
-    { 
-        question: "Which chemical element is named after Poland?",
+    { question: "Which chemical element is named after Poland?",
         answers: [
             {text:"Palladium", correct:false},        
             {text:"Radium", correct:false},
             {text:"Radon", correct:false},
             {text:"Polonium", correct:true}]
     },
-    { 
-        question: "What's the name of Poland's principal seaport?",
+    { question: "What's the name of Poland's principal seaport?",
         answers: [
             {text:"Gdynia", correct:false},        
             {text:"Krakow", correct:false},
             {text:"Gdansk", correct:true},
             {text:"Sopot", correct:false}]
     },
-    { 
-        question: "Which astronomer first formulated a model of the universe that placed the Sun at its center?",
+    { question: "Which astronomer first formulated a model of the universe that placed the Sun at its center?",
         answers: [
             {text:"Joseph Konrad", correct:false}, 
             {text:"Nicolaus Copernicus", correct:true},       
             {text:"Lech Walesa", correct:false},
             {text:"Frederic Chopin", correct:false}]
     },
-    { 
-        question: "What is the national animal of Poland?",
+    { question: "What is the national animal of Poland?",
         answers: [
             {text:"Otter", correct:false}, 
             {text:"European Bison", correct:true},       
