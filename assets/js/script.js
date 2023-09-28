@@ -3,74 +3,62 @@ const questions = [
     {
         question: "What is the capital of Poland?",
         answers: [
-            {text:'Warsaw', correct:true},
-            {text:'Budapest', correct:false},        
-            {text:'Prague', correct:false},
-            {text:'Riga', correct:false},
-
-        ]
+            {text:"Warsaw", correct:true},
+            {text:"Budapest", correct:false},        
+            {text:"Prague", correct:false},
+            {text:"Riga", correct:false}]
     },
     { 
         question: "What is the Polish currency unit?",
         answers: [
-            {text:'Zloty', correct:true},
-            {text:'Krona', correct:false},        
-            {text:'Koruna', correct:false},
-            {text:'Euro', correct:false},
-        ]
+            {text:"Zloty", correct:true},
+            {text:"Krona", correct:false},        
+            {text:"Koruna", correct:false},
+            {text:"Euro", correct:false}]
     },
     { 
         question: "Who is a president of Poland?",
         answers: [
-            {text:'Viktor Orban', correct:false},        
-            {text:'Petr Pavel', correct:false},
-            {text:'Andrzej Duda', correct:true},
-            {text:'Zoran Milanovic', correct:false},
-        ]
+            {text:"Viktor Orban", correct:false},        
+            {text:"Petr Pavel", correct:false},
+            {text:"Andrzej Duda", correct:true},
+            {text:"Zoran Milanovic", correct:false}]
     },
     { 
         question: "Which chemical element is named after Poland?",
         answers: [
-            {text:'Palladium', correct:false},        
-            {text:'Radium', correct:false},
-            {text:'Radon', correct:false},
-            {text:'Polonium', correct:true},
-
-        ]
+            {text:"Palladium", correct:false},        
+            {text:"Radium", correct:false},
+            {text:"Radon", correct:false},
+            {text:"Polonium", correct:true}]
     },
     { 
         question: "What's the name of Poland's principal seaport?",
         answers: [
-            {text:'Gdynia', correct:false},        
-            {text:'Krakow', correct:false},
-            {text:'Gdansk', correct:true},
-            {text:'Sopot', correct:false},
-
-        ]
+            {text:"Gdynia", correct:false},        
+            {text:"Krakow", correct:false},
+            {text:"Gdansk", correct:true},
+            {text:"Sopot", correct:false}]
     },
     { 
         question: "Which astronomer first formulated a model of the universe that placed the Sun at its center?",
         answers: [
-            {text:'Joseph Konrad', correct:false}, 
-            {text:'Nicolaus Copernicus', correct:true},       
-            {text:'Lech Walesa', correct:false},
-            {text:'Frederic Chopin', correct:false},
-
-        ]
+            {text:"Joseph Konrad", correct:false}, 
+            {text:"Nicolaus Copernicus", correct:true},       
+            {text:"Lech Walesa", correct:false},
+            {text:"Frederic Chopin", correct:false}]
     },
     { 
         question: "What is the national animal of Poland?",
         answers: [
-            {text:'Otter', correct:false}, 
-            {text:'European Bison', correct:true},       
-            {text:'Red Deer', correct:false},
-            {text:'Lynx', correct:false},
-
-        ]
+            {text:"Otter", correct:false}, 
+            {text:"European Bison", correct:true},       
+            {text:"Red Deer", correct:false},
+            {text:"Lynx", correct:false}]
     },
-
 ]
 
+// variables
 let currentQuestionIndex = 0;
 let score = 0;
 const questionText = document.getElementById("question");
@@ -92,7 +80,7 @@ function displayQuestion() {
     let currentQuestion = questions[currentQuestionIndex];
     questionText.textContent = currentQuestion.question;
 
-    currentQuestion.answers.forEach(answer => {
+    currentQuestion.answers.forEach((answer) => {
         let button = document.createElement("button");
         button.textContent = answer.text;
         button.classList.add("answer");
@@ -112,7 +100,6 @@ function setNextQuestion() {
  
  // function that checks the selected answer
 function checkAnswer(answer){
-    console.log("checkAnswer function is called"); // Debugging line
     if (answer.correct) {
         alert('Correct!');
         score++; // increment the score
