@@ -96,7 +96,7 @@ function displayQuestion() {
         let button = document.createElement("button");
         button.textContent = answer.text;
         button.classList.add("answer");
-        button.addEventListener("click", checkAnswer);
+        button.addEventListener("click", () => checkAnswer(answer));
         answerButtons.appendChild(button);
         });
 }
@@ -112,7 +112,7 @@ function setNextQuestion() {
  
  // function that checks the selected answer
 function checkAnswer(answer){
-        
+    console.log("checkAnswer function is called"); // Debugging line
     if (answer.correct) {
         alert('Correct!');
         score++; // increment the score
