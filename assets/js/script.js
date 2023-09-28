@@ -65,7 +65,7 @@ const questionText = document.getElementById("question");
 const answerButtons = document.getElementById("answers");
 const nextButton = document.getElementById("next-btn");
 
-// function that initializes the quiz
+// function to initialize the quiz
 function runGame() {
 currentQuestionIndex = 0;
 score = 0;
@@ -73,7 +73,7 @@ nextButton.textContent = "Next";
 displayQuestion();
 }
 
-// function that displays questions and answers
+// function to display questions and answers
 function displayQuestion() {
     setNextQuestion();
 
@@ -89,7 +89,7 @@ function displayQuestion() {
         });
 }
 
-// function that sets the next question and answers
+// function to set the next question and answers
 function setNextQuestion() {
 
      nextButton.style.display ="none";
@@ -98,7 +98,7 @@ function setNextQuestion() {
      }
     }
  
- // function that checks the selected answer
+ // function to check the selected answer
 function checkAnswer(answer){
     if (answer.correct) {
         alert('Correct!');
