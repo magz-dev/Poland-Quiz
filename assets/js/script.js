@@ -7,7 +7,7 @@ const questions = [
             {text:"Prague", correct:false},
             {text:"Riga", correct:false}]
     },
-    { question: "What is the currency unit of Poland?",
+    { question: "What is the currency unit in Poland?",
         answers: [
             {text:"Zloty", correct:true},
             {text:"Krone", correct:false},        
@@ -68,6 +68,7 @@ displayQuestion();
 
 // function to display questions and answers
 function displayQuestion() {
+    
     setNextQuestion();
 
     let currentQuestion = questions[currentQuestionIndex];
@@ -93,6 +94,7 @@ function setNextQuestion() {
  
  // function to check the selected answer
 function checkAnswer(answer){
+
     if (answer.correct) {
         alert("Correct!");
         score++; // increment the score

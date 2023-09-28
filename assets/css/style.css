@@ -1,46 +1,67 @@
 body {
-    /* below line of code is from https://dev.to/nazanin_ashrafi/how-to-darken-an-image-with-css-4f5h */
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('https://cutewallpaper.org/28/cool-polish-flag-wallpaper-dh/download-wallpapers-flag-of-poland-polish-flag-poland-europe-silk-besthqwallpaperscom-bandera-de-polonia-bandera-polaca-banderas.png');
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  /* below line of code is from https://dev.to/nazanin_ashrafi/how-to-darken-an-image-with-css-4f5h */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url('https://cutewallpaper.org/28/cool-polish-flag-wallpaper-dh/download-wallpapers-flag-of-poland-polish-flag-poland-europe-silk-besthqwallpaperscom-bandera-de-polonia-bandera-polaca-banderas.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
 }
 
 
 h1 {
-    text-transform: capitalize;
-    color: white;
-    margin-bottom: 150px;
-    margin-top: 100px;
-   
+  text-transform: capitalize;
+  color: white;
+  margin-bottom: 85px;
+  margin-top: 65px;
+
 }
 
 .btn-grid {
   display: grid;
   gap: 15px;
   margin: 30px 15px;
-  grid-template-columns: repeat(2,auto);
+  grid-template-columns: repeat(2, auto);
 }
 
 .container {
-background-color: white;
-max-width: 80%;
-width:800px;
-border-radius: 5px;
-box-shadow: 0 0 10px 2px;
+  background-color: white;
+  max-width: 80%;
+  width: 800px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px;
 }
 
 .container-fluid {
   text-align: center;
 }
 
- .next-btn {
+.next-btn {
   margin: 20px;
 }
 
-/* .btn {
+ .btn-style {
   color: black;
   font-weight: bold;
-} */
+  margin-bottom: 10px;
+} 
+
+.answer {
+  text-align: center;
+  color: red;
+  background-color: white;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 0.2s;
+  font-weight: 600;
+  font-size: large;
+}
+
+.answer:hover {
+  background-color: red;
+  color: white;
+}
+#question {
+  padding: 10px;
+}
