@@ -12,15 +12,15 @@ body {
 h1 {
   text-transform: capitalize;
   color: white;
-  margin-bottom: 85px;
+  margin-bottom: 65px;
   margin-top: 65px;
-
+  font-family: 'Young Serif', serif;
 }
 
 .btn-grid {
   display: grid;
   gap: 15px;
-  margin: 30px 15px;
+  margin: 20px 15px;
   grid-template-columns: repeat(2, auto);
 }
 
@@ -40,12 +40,6 @@ h1 {
   margin: 20px;
 }
 
- .btn-style {
-  color: black;
-  font-weight: bold;
-  margin-bottom: 10px;
-} 
-
 .answer {
   text-align: center;
   color: red;
@@ -56,6 +50,8 @@ h1 {
   transition: all 0.2s;
   font-weight: 600;
   font-size: large;
+  font-family: 'Gabarito', cursive;
+
 }
 
 .answer:hover {
@@ -63,5 +59,7 @@ h1 {
   color: white;
 }
 #question {
-  padding: 10px;
+  padding: 12px;
+  font-family: 'Young Serif', serif;
+
 }
