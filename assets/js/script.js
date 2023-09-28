@@ -12,12 +12,12 @@ const questions = [
         question: "What is the Polish currency unit?",
         answers: [
             {text:"Zloty", correct:true},
-            {text:"Krona", correct:false},        
+            {text:"Krone", correct:false},        
             {text:"Koruna", correct:false},
             {text:"Euro", correct:false}]
     },
     { 
-        question: "Who is a president of Poland?",
+        question: "Who is the president of Poland?",
         answers: [
             {text:"Viktor Orban", correct:false},        
             {text:"Petr Pavel", correct:false},
@@ -56,7 +56,7 @@ const questions = [
             {text:"Red Deer", correct:false},
             {text:"Lynx", correct:false}]
     },
-]
+];
 
 // variables
 let currentQuestionIndex = 0;
@@ -101,7 +101,7 @@ function setNextQuestion() {
  // function to check the selected answer
 function checkAnswer(answer){
     if (answer.correct) {
-        alert('Correct!');
+        alert("Correct!");
         score++; // increment the score
     } else {
         const correctAnswer = questions[currentQuestionIndex].answers.find(function (ans) {
@@ -120,7 +120,7 @@ function checkAnswer(answer){
         answerButtons.style.display = "none";
     }
 }
-    
+
  runGame();
 
 
