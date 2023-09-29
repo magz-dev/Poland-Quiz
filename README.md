@@ -112,3 +112,7 @@ Answer buttons lost it's Bootstrap styling because of one Javascript function bu
 * [Tutorial used as help to style with CSS](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1196s)
 * Code Institute's learning content
   
+### Acknowledgements
+* Tutor support from the Code Institute.
+* My Mentor for helpful comments and supportive feedback.
+* Kera Cudmore for creating great README examples.
