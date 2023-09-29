@@ -1,7 +1,7 @@
 # Poland Quiz
 [View the life project here.](https://magz-dev.github.io/Poland-Quiz/)
 
-This is a a fully responsive web application designed to provide users with interactive content which produces relevant responses to user actions.
+This is a a fully responsive web application quiz designed to provide users with interactive learning content that produces the correct answer to the users responses before providing them with their score at the end of the quiz.
 
 ![Screenshot 2023-09-29 201635](https://github.com/magz-dev/Poland-Quiz/assets/97630146/5eb6f50b-4da3-48fb-b84c-3a06df59b891)
 
@@ -9,16 +9,18 @@ This is a a fully responsive web application designed to provide users with inte
 ## User Experince (UX)
 ### User Stories
 #### First Time Visitor Goals
-* I want to easily understand the main purpose of the site.
+* I want to learn more about the country of Poland.
+* I want to challenge myself, my friends and family on our knowledge of Poland through quizzing. 
   
 #### Returning Visitor Goals
 * I want to be able to navigate the site easily.
-
+* I want to be able to replay the test to beat my previous scores. 
+  
 #### Frequent User Goals
-* I want to be able  to view the site on a range of device sizes.
+* I want to be able  to view the site on a range of devices.
 
 ## Design
-* Resposive on all devices
+* Resposive and accessible on all devices
 * [Wireframes](https://github.com/magz-dev/Poland-Quiz/files/12767684/Poland-Quiz.pdf) - created for mobile, tablet and desktop.
   
 ### Frameworks, Libraries & Programs Used
@@ -37,8 +39,8 @@ This is a a fully responsive web application designed to provide users with inte
 
 ### Typography
 Google Fonts was used for the following fonts:
-* Young Serif is used for the main hading and  on the site. It is a serif font.
-* Gabarito font is used for answer buttons on the site. It is a cursive font.
+* Young Serif is used for the main heading on the site. It is a serif font.
+* Gabarito font is used for the answer buttons on the site. It is a cursive font.
 
 ### Media
 * The background photo was taken from a non-copyrighted google image search.
@@ -61,7 +63,7 @@ Github Pages was used to deploy the live website. The instructions to achieve th
 
 #### How to Fork
 
-To fork the Poaland Quiz repository:
+To fork the Poland Quiz repository:
 
 1. Log in (or sign up) to Github.
 2. Go to the repository for this project, magz-dev/ Poland-Quiz.
