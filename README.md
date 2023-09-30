@@ -118,3 +118,4 @@ Answer buttons lost it's Bootstrap styling because of one Javascript function bu
 * Tutor support from the Code Institute.
 * My Mentor for helpful comments and supportive feedback.
 * Kera Cudmore for creating great README examples.
+* Slack community for project assistance.
