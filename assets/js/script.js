@@ -120,7 +120,7 @@ function checkAnswer(answer){
         questionText.textContent = `You scored ${score} out of ${questions.length}!`;
         nextButton.style.display = "none";
         answerButtons.style.display = "none";
-        playAgainButton.style.display = "block"; // Show the "Play Again" button
+        playAgainButton.style.display = "inline-block"; // Show the "Play Again" button
 
     }
 }

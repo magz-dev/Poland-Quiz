@@ -28,6 +28,7 @@ h1 {
   width: 800px;
   border-radius: 5px;
   box-shadow: 0 0 10px 2px;
+  justify-content: center;
 }
 
 .container-fluid {
@@ -53,6 +54,7 @@ h1 {
   color: white;
 
 }
+
 #question {
   padding: 12px;
   font-family: 'Young Serif', serif;
@@ -60,20 +62,20 @@ h1 {
 }
 
 #play-again {
+  margin: auto;
   text-align: center;
   color: white;
   background-color: red;
   border-radius: 5px;
-  padding: 15px;
+  padding: 10px;
   transition: all 0.2s;
   font-size: larger;
   font-family: 'Gabarito', cursive;
- position: absolute;
-
+  margin-bottom: 15px;
 
 }
 
-#play-again:hover{
+#play-again:hover {
   background-color: white;
   color: red;
 }
