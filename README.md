@@ -20,7 +20,7 @@ This is a a fully responsive web application quiz designed to provide users with
 * I want to be able  to view the site on a range of devices.
 
 ## Design
-* Resposive and accessible on all devices
+* Resposive and accessible on all devices.
 * [Wireframes](https://github.com/magz-dev/Poland-Quiz/files/12767684/Poland-Quiz.pdf) - created for mobile, tablet and desktop.
   
 ### Frameworks, Libraries & Programs Used
@@ -93,7 +93,7 @@ The JSHint, W3C Markup Validator and W3C CSS Validator Services were used to val
 
 ![Screenshot 2023-09-29 203045](https://github.com/magz-dev/Poland-Quiz/assets/97630146/e077a657-f287-4239-b240-eeeb31995768)
 
-* The website was viewed on a variety of devices such as desktop, laptop, mobile devices. I also went through each page using google chrome developer tools to ensure that they responsive on all different screen sizes.
+* The website was viewed on a variety of devices such as desktop, laptop, mobile devices. I also went through each page using google chrome developer tools to ensure that they are responsive on all different screen sizes.
 * A large amount of testing was done to ensure that all pages were working correctly.
 * Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
@@ -112,7 +112,7 @@ Answer buttons lost it's Bootstrap styling because of one Javascript function bu
 * [W3Schools](https://www.w3schools.com/default.asp)
 * [Javascript quiz tutorial ](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1196s)
 * [Tutorial used as help to style with CSS](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1196s)
-* Code Institute's learning content
+* Code Institute's learning content.
   
 ### Acknowledgements
 * Tutor support from the Code Institute.
