@@ -17,7 +17,6 @@ h1 {
 }
 
 .btn-grid {
-  display: grid;
   gap: 15px;
   margin: 20px 15px;
   grid-template-columns: repeat(2, auto);
@@ -33,10 +32,6 @@ h1 {
 
 .container-fluid {
   text-align: center;
-}
-
-.next-btn {
-  margin: 20px;
 }
 
 .answer {
@@ -62,4 +57,23 @@ h1 {
   padding: 12px;
   font-family: 'Young Serif', serif;
 
+}
+
+#play-again {
+  text-align: center;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  padding: 15px;
+  transition: all 0.2s;
+  font-size: larger;
+  font-family: 'Gabarito', cursive;
+ position: absolute;
+
+
+}
+
+#play-again:hover{
+  background-color: white;
+  color: red;
 }

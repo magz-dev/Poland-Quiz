@@ -57,13 +57,20 @@ let score = 0;
 const questionText = document.getElementById("question");
 const answerButtons = document.getElementById("answers");
 const nextButton = document.getElementById("next-btn");
+const playAgainButton = document.getElementById("play-again");
+playAgainButton.addEventListener("click", runGame); // Call the runGame function to restart the quiz
+
+
 
 // function to initialize the quiz
 function runGame() {
 currentQuestionIndex = 0;
 score = 0;
 nextButton.textContent = "Next";
+playAgainButton.style.display = "none"; // Hide the "Play Again" button initially
+answerButtons.style.display = "grid"; // Show the answer buttons
 displayQuestion();
+
 }
 
 // function to display questions and answers
@@ -113,6 +120,8 @@ function checkAnswer(answer){
         questionText.textContent = `You scored ${score} out of ${questions.length}!`;
         nextButton.style.display = "none";
         answerButtons.style.display = "none";
+        playAgainButton.style.display = "block"; // Show the "Play Again" button
+
     }
 }
 
