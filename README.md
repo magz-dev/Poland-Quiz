@@ -1,5 +1,5 @@
 # Poland Quiz
-[View the life project here.](https://magz-dev.github.io/Poland-Quiz/)
+[View the live project here](https://magz-dev.github.io/Poland-Quiz/)
 
 This is a a fully responsive web application quiz designed to provide users with interactive learning content that produces the correct answer to the users responses before providing them with their score at the end of the quiz.
 
