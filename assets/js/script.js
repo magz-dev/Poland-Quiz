@@ -16,9 +16,9 @@ const questions = [
     },
     { question: "Who is the president of Poland?",
         answers: [
-            {text:"Viktor Orban", correct:false},        
+            {text:"András Baka", correct:false},        
             {text:"Petr Pavel", correct:false},
-            {text:"Andrzej Duda", correct:true},
+            {text:"Karol Nawrocki", correct:true},
             {text:"Zoran Milanovic", correct:false}]
     },
     { question: "Which chemical element is named after Poland?",
